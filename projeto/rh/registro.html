@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ABC Tecnologia</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        .btn-primary {
+            background-color: darkblue;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">RH - ABC Tecnologia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="candidatos.html">Candidatos</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+
+<div class="container">      
+    <h1>Registro de Candidatos</h1>
+
+    <form action="" method="post" id="cadastro">
+        <p class="form-group">
+            <label for="nome">Nome:</label>
+            <input class="form-control" required type="text" name="nome" id="nome">
+        </p>
+
+        <p class="form-group">
+            <label for="data">Data de nascimento:</label>
+            <input class="form-control" required type="date" name="data" id="data">
+        </p>
+
+        <p class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input class="form-control" required type="tel" name="telefone" id="telefone">
+        </p>
+
+        <p class="form-group">
+            <label for="email">E-mail:</label>
+            <input class="form-control" required type="email" name="email" id="email">
+        </p>
+
+        <p class="form-group">
+            <label for="vaga">Vaga desejada:</label>
+            <select class="custom-select" required name="vaga" id="vaga">
+                     
+            </select>
+        </p>
+
+        
+        <button class="btn btn-primary" type="submit">Incluir</button>
+    </form>
+
+    <p id="mensagem"></p>
+</div>    
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<script src="../js/lista-vagas.js"></script>    
+<script src="../js/cadastro.js"></script>
+
+</body>
+</html>

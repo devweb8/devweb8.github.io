@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+    <h1>Introdução ao jQuery</h1>
+    <h2>Famosa biblioteca JavaScript</h2>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+    <!-- "Instalação/Importação" da jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+
+    <script>
+        const titulo = $("h1");
+        console.log(titulo);
+
+        const paragrafos = $("p");
+        console.log(paragrafos);
+
+        paragrafos.css("color", "red");
+
+        titulo.text("Olá jQuery!");
+
+        const subtitulo = $("h2");
+        subtitulo.on("click", function(){
+            titulo.text("Cliqueiiiii :-)");
+            paragrafos.fadeOut();
+        });
+
+    </script>
+    
+
+</body>
+</html>

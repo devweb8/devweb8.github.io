@@ -1,0 +1,127 @@
+/* Alterando o Box-Model */
+* { box-sizing: border-box; }
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* CSS Reset */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    margin: 0; /* CSS reset */
+    padding-left: 15px;
+}
+
+.introducao {
+    background-image: url(../imagens/teclado.jpg);
+    
+    /* Versão abreviada/curta */
+    padding: 220px 0;
+
+    /* Versão completa: */
+    /* padding-top: 220px;
+    padding-bottom: 220px;
+    padding-left: 0;
+    padding-right: 0; */
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+/* p {
+    line-height: 30px;
+    padding-top: 15px;
+} */
+
+footer {
+    background-image: linear-gradient(black,darkblue);
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    /* Usando o flex para alinhamentos
+    horizontal e vertical */
+    display: flex; /* ativando o modo flex */
+    justify-content: center;
+    align-items: center;
+}
+
+.registro {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none; 
+    text-transform: uppercase;
+    
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    padding-top: 55px;
+    top: 400px;
+    right: 50px;
+    transform: rotate(5deg);
+    transition: 0.5s;
+}
+
+.hoje {
+    font-size: 24px;
+    color: yellow;
+}
+
+.registro:hover, .registro:focus {
+    background-color: darkblue;
+	transform: rotate(10deg);
+}
+
+
+.container { 
+    margin-top: 80px; 
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 760px) {
+    .registro {
+        width: 130px;
+        height: 130px;
+        font-weight: 14px;
+        padding-top: 45px;
+    }
+
+    .hoje { font-size: 18px; }
+}
+
+
+.treinamentos section {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.treinamentos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flutuar-esquerda {
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+}
+
+.ajuste { padding-top: 15px; }
